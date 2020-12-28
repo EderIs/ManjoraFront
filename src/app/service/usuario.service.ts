@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class UsuarioService {
 
+usuarioURL = 'http://localhost:8080/usuario/'
+
   constructor() { }
 }
