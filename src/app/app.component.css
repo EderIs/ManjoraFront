@@ -1,0 +1,9 @@
+.dropdown-toggle::after{
+    color: transparent!important;
+   
+}
+
+.btn-manjora{
+    margin-right: 0px!important;
+    padding-right: 0rem!important;
+}
