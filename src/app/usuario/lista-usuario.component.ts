@@ -17,15 +17,21 @@ export class ListaUsuarioComponent implements OnInit {
     this.cargarUsuarios();
   }
 
-cargarUsuarios():void {
-  this.usuarioService.lista().subscribe(
-    data => {
-      this.usuarios = data;
-    },
-    err => {
-      console.log(err);
-    }
-  )
-}
+  cargarUsuarios():void {
+    this.usuarioService.lista().subscribe(
+      data => {
+        this.usuarios = data;
+      },
+      err => {
+        console.log(err);
+      }
+    )
+  }
+
+  borrar(id:number){
+    alert('Borrar el' +id);
+  }
+
+  
 
 }
