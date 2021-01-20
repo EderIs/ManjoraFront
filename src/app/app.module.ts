@@ -7,6 +7,15 @@ import { ListaUsuarioComponent } from './usuario/lista-usuario.component';
 import { DetalleUsuarioComponent } from './usuario/detalle-usuario.component';
 import { NuevoUsuarioComponent } from './usuario/nuevo-usuario.component';
 import { EditarUsuarioComponent } from './usuario/editar-usuario.component';
+import { ListaPaisComponent } from './pais/lista-pais.component';
+import { DetallePaisComponent } from './pais/detalle-pais.component';
+import { NuevoEditPaisComponent } from './pais/nuevo-edit-pais.component';
+import { ListaEstadoComponent } from './estado/lista-estado.component';
+import { DetalleEstadoComponent } from './estado/detalle-estado.component';
+import { NuevoEditEstadoComponent } from './estado/nuevo-edit-estado.component';
+import { ListaContactoComponent } from './contacto/lista-contacto.component';
+import { DetalleContactoComponent } from './contacto/detalle-contacto.component';
+import { NuevoEditContactoComponent } from './contacto/nuevo-edit-contacto.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -23,6 +32,7 @@ import { NuevoEditarPuestoComponent } from './puesto/nuevo-editar-puesto/nuevo-e
 import { NuevoEditarDepartamentoComponent } from './departamento/nuevo-editar-departamento/nuevo-editar-departamento.component';
 import { DetalleDepartamentoComponent } from './departamento/detalle-departamento/detalle-departamento.component';
 import { ListaDepartamentoComponent } from './departamento/lista-departamento/lista-departamento.component';
+
 
 @NgModule({
   declarations: [
