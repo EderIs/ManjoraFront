@@ -1,1 +1,96 @@
-<p>nuevo-usuario works!</p>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>
+                    <span style="color: #17A2B8;">
+                        <i class="fas fa-users"></i>
+                    </span>
+                    &nbsp;Usuarios</h4>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Tablero</a></li>
+                    <li class="breadcrumb-item"><a href="#">Usuarios</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Datos</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="btn-group">
+    <div class="container">
+    <button type="button" class="btn btn-default">Enviar Instrucciones de restablecimiento de la contraseña</button>
+</div>
+  </div>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <form (ngSubmit)= "onCreate()" novalidate #f="ngForm"> 
+                  <!-- <div class="form-group">
+                        <div class="float-right custom-control custom-switch" >
+                            <input type="checkbox" class="custom-control-input" id="estado">
+                            <label class="custom-control-label" for="estado">
+                              Activo
+                            </label>
+                          </div>
+                        </div>
+                        <div>
+                            <img src="..." alt="..." class="img-thumbnail" >
+                        </div>
+                        --> 
+                    <div class="form-group row">
+                        <label for="nombreUsuario" class="col-sm-2 col-form-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario"
+                             [(ngModel)]="nombreUsuario" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="direccionCorreo" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="direccionCorreo" name="direccionCorreo"
+                             [(ngModel)]="direccionCorreo" required>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="form-group row">
+                        <label for="contrasena" class="col-sm-2 col-form-label">Contraseña</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="contrasena" name="contrasena"
+                             [(ngModel)]="contrasena" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="fechaCreacion" class="col-sm-2 col-form-label">Fecha Creacion</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fechaCreacion" name="fechaCreacion"
+                             [(ngModel)]="fechaCreacion" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="ultimoAcceso" class="col-sm-2 col-form-label">ultimo Acceso</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="ultimoAcceso" name="ultimoAcceso"
+                             [(ngModel)]="ultimoAcceso" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="estado" class="col-sm-2 col-form-label">estado</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="estado" name="estado"
+                             [(ngModel)]="estado" required>
+                        </div>
+                    </div>
+                    -->
+                    <div class="row row-margin-top">
+                        <div class="col-lg-6">
+                            <button class="btn btn-outline-secondary btn-block"[disabled]="!f.valid">Guardar</button>
+                            &nbsp;
+                            <button type="button" class="btn btn-sm btn-secondary">Descartar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
