@@ -1,3 +1,5 @@
+import {Estado}from './estado'
+
 export class Banco{
 
  id?:number;
@@ -6,14 +8,14 @@ export class Banco{
  calle:string;
  calleSecundaria:string;
  ciudad:string;
-//Falta estado para hacer el match 
+ estado:Estado
  codigoPostal:number;
  telefono:string;
  correoElectronico:string;
  activo:string;
 
 
-constructor(nombre:string,codigoIdenBancaria:string,calle:string,calleSecundaria:string,ciudad:string,
+constructor(nombre:string,codigoIdenBancaria:string,calle:string,calleSecundaria:string,ciudad:string,estado:Estado,
    codigoPostal:number,telefono:string,correoElectronico:string,activo:string,
     ){
 
@@ -22,7 +24,7 @@ constructor(nombre:string,codigoIdenBancaria:string,calle:string,calleSecundaria
         this.calle=calle;
         this.calleSecundaria=calleSecundaria;
         this.ciudad=ciudad;
-       //Falta estado para hacer el match 
+        this.estado=estado;
         this.codigoPostal=codigoPostal;
         this.telefono=telefono;
         this.correoElectronico=correoElectronico;

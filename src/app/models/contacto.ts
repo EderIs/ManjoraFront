@@ -1,6 +1,6 @@
 import { Byte } from "@angular/compiler/src/util";
 import{Estado}from './estado';
-//import{Titulo}from './titulo';
+import{Titulo}from './titulo';
 import{Usuario}from './usuario';
 
 export class Contacto {
@@ -20,9 +20,7 @@ export class Contacto {
     movil: string;
     correoElectronico: string;
     sitioWeb: string;
-
-    //titulo: Titulo;
-
+    titulo: Titulo;
     notas: string;
     rol: boolean;
     usuario: Usuario;
@@ -44,7 +42,7 @@ export class Contacto {
         movil: string,
         correoElectronico: string,
         sitioWeb: string,
-        //titulo Titulo, 
+        titulo: Titulo, 
         notas: string,
         rol: boolean,
         usuario: Usuario,
@@ -65,7 +63,7 @@ export class Contacto {
         this.movil = movil;
         this.correoElectronico = correoElectronico;
         this.sitioWeb = sitioWeb;
-        //this.titulo = titulo;
+        this.titulo = titulo;
         this.notas = notas;
         this.rol = rol;
         this.usuario = usuario;
