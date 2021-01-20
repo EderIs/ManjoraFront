@@ -121,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "manjora"
+  "defaultProject": "manjora",
+  "cli": {
+    "analytics": "95988de5-cd77-49ae-98b9-475774036e5a"
+  }
 }
